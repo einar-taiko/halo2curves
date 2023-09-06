@@ -14,6 +14,7 @@ criterion = { version = "0.3", features = ["html_reports"] }
 rand_xorshift = "0.3"
 ark-std = { version = "0.3" }
 bincode = "1.3.3"
+halo2_proofs = { git = "https://github.com/taikoxyz/halo2.git" }
 
 [dependencies]
 subtle = "2.4"
@@ -67,3 +68,12 @@ harness = false
 [[bench]]
 name = "hash_to_curve"
 harness = false
+
+[[bench]]
+name = "msm"
+harness = false
+
+[[bench]]
+name = "fft"
+harness = false
+
